@@ -9,18 +9,22 @@ JESUS IS THE STONE THAT SAVES THE SOUL
 </marquee>
 <br>
 <br>
-<hr size = 15>
-<br>
-<br>
-<br>
-<br>
-<p>May 3 outreach ... </p>
-<video width="320" height="240" controls>
-<source href="https://mopnroll.online/may_3/x13.mp4" type="video/mp4">
-</video>
-<br>
-<br>
-WHOLE VIDEO
+<div id="video-box" data-video-id="D6Ac5JpCHmI"> 
+  <button type="button" id="play-btn">Play Video</button> 
+</div> 
+<script> 
+document.getElementById("play-btn").addEventListener("click", function () { 
+  const box = document.getElementById("video-box"); 
+  const videoId = box.getAttribute("data-video-id"); 
+  const iframe = document.createElement("iframe"); 
+  iframe.setAttribute("width", "320"); 
+  iframe.setAttribute("height", "240"); 
+  iframe.setAttribute("src", `https://www.mopnroll.online/may_3_x05.mp4);    iframe.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"); 
+  iframe.setAttribute("allowfullscreen", "true"); 
+  box.innerHTML = ""; 
+  box.appendChild(iframe);
+}); 
+</script>
 <br>
 <br>
 <hr size=15>
